@@ -31,11 +31,12 @@ p.discription{
     font-size: 14px;
    
 }
+/* mobile style*/
 div.content{
     background-color: white;
-    margin: 0% 10% 10% 10%;
-    padding: 30px;
-    min-width: 350px;
+    margin: 0% 5px 5px 5px;
+    padding: 10px;
+    /*min-width: 350px;*/
     
 }
 div.discription{
@@ -72,7 +73,7 @@ div.info{
 table.info{
     position: absolute;
     bottom: 100px;
-    height: 75px;
+    height: 50px;
     color: white;
     background-color:#6C829DC0;
     width: 100%;
@@ -83,6 +84,13 @@ table.info{
 }
 table.info td{
     text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+}
+table.info th{
+    vertical-align: bottom;
+    padding: 8px;
+    font-size: 14px;
 }
 div.separator{
     height: 1px;
@@ -106,7 +114,7 @@ div.col1{
 }
 div.col2{
     text-align: center;
-    float:right;
+    /*float:right;*/
    
 }
 div.col h2{
@@ -117,7 +125,7 @@ div.col h2{
     margin-bottom: 30px;
 }
 div.col{
-    width: 45%;
+    width: 100%;
     margin-top: 10px;
 }
 p.help{
@@ -151,5 +159,55 @@ table.instruction p.number{
 div.shadow{
     box-shadow: 10px 10px 5px gray;
 }
+/* desktop style*/
+@media only screen and (min-width: 768px){
+    div.content{
+        background-color: white;
+        margin: 0% 10% 10% 10%;
+        padding: 30px;
+        min-width: 350px;
+        max-width: 650px;
 
+    }
+    table.info{
+        
+        height: 75px;
+        
+      
+       
+    }
+    table.info td{
+        
+        font-size: 14px;
+    }
+    table.info th{
+        
+        font-size: 16px;
+    }
+    div.col1{
+ 
+        text-align: center;
+        display: inline-block;
+        
+    }
+    div.col2{
+        text-align: center;
+        float:right;
+       
+    }
+   
+    div.col{
+        width: 45%;
+        margin-top: 10px;
+    }        
+}
+@media only screen and (min-width: 768px){
+    div.content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+
+    }
+
+}
 
